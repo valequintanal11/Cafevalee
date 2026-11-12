@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservas — Café Val</title>
+<meta name="description" content="Reserva tu mesa en Café Val, cafetería francesa. Elige día, hora y comensales y descubre nuestro espacio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header" id="top">
+  <div class="topbar">
+    <p>Abierto de martes a domingo · 08:00 — 20:00 · Rue de Val, 12</p>
+  </div>
+
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="brand" href="index.html" aria-label="Café Val, inicio">
+      <span class="brand-script">Café</span>
+      <span class="brand-name">VAL</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="index.html#carta">La Carte</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#faq">Preguntas</a></li>
+      <li><a class="btn btn--ghost nav-reserve" href="reservas.html">Reservar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <section class="hero hero--compact" aria-label="Reservas">
+    <div class="hero-media">
+      <img src="media/reserva-mesa.webp" alt="Mesa preparada para una reserva en Café Val">
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow" data-aos="fade-up">Réservation</p>
+      <h1 data-aos="fade-up" data-aos-delay="100">Reserva tu mesa en Café Val</h1>
+      <p class="hero-text" data-aos="fade-up" data-aos-delay="200">Elige el día y cuántos sois: prepararemos la mejor mesa de la casa. Y mientras tanto, echa un vistazo a nuestro espacio.</p>
+    </div>
+  </section>
+
+  <section class="section reservas" id="reservas">
+    <div class="container reservas-grid">
+      <div class="reservas-copy">
+        <p class="eyebrow" data-aos="fade-up">Votre table</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Dinos cuándo vienes</h2>
+        <p class="section-sub" data-aos="fade-up" data-aos-delay="140">Déjanos tus datos y te confirmaremos la reserva al instante.</p>
+        <ul class="contact-list" data-aos="fade-up" data-aos-delay="180">
+          <li><strong>Dirección</strong> Rue de Val, 12 · 28004 Madrid</li>
+          <li><strong>Teléfono</strong> +34 910 000 000</li>
+          <li><strong>Horario</strong> Mar — Dom · 08:00 a 20:00</li>
+        </ul>
+      </div>
+
+      <form class="reserva-form" id="reserva-form" novalidate data-aos="fade-left" data-aos-delay="160">
+        <div class="field">
+          <label for="nombre">Nombre y apellidos</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Camille Dupont" required>
+          <span class="field-error" data-error-for="nombre"></span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="hola@correo.com" required>
+            <span class="field-error" data-error-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+34 600 000 000" required>
+            <span class="field-error" data-error-for="telefono"></span>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <span class="field-error" data-error-for="fecha"></span>
+          </div>
+          <div class="field">
+            <label for="personas">Comensales</label>
+            <select id="personas" name="personas" required>
+              <option value="">Elige…</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6+">Más de 5</option>
+            </select>
+            <span class="field-error" data-error-for="personas"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Comentarios (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="3" placeholder="Alergias, celebración, terraza…"></textarea>
+        </div>
+
+        <button class="btn btn--solid btn--full" type="submit">Confirmar reserva</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-aos="fade-up">Notre espace</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">El espacio que te espera</h2>
+        <p class="section-sub" data-aos="fade-up" data-aos-delay="140">Desliza para descubrir dónde te sentarás.</p>
+      </header>
+    </div>
+
+    <div class="slider" data-aos="fade-up" data-aos-delay="160">
+      <div class="slider-viewport">
+        <ul class="slider-track">
+          <li class="slide"><img src="media/ambiente-interior.webp" alt="Detalle del interior con plantas y espejos vintage"><span class="slide-caption">El interior</span></li>
+          <li class="slide"><img src="media/galeria-terraza.webp" alt="Terraza de cafetería francesa por la mañana"><span class="slide-caption">La terraza</span></li>
+          <li class="slide"><img src="media/galeria-rincon.webp" alt="Rincón de lectura con sillones y estantería"><span class="slide-caption">El rincón de lectura</span></li>
+          <li class="slide"><img src="media/galeria-latte.webp" alt="Barista sirviendo latte art en la barra"><span class="slide-caption">La barra</span></li>
+          <li class="slide"><img src="media/galeria-macarons.webp" alt="Vitrina de macarons y éclairs franceses"><span class="slide-caption">La pâtisserie</span></li>
+        </ul>
+      </div>
+
+      <button class="slider-btn slider-prev" type="button" aria-label="Imagen anterior">&#8249;</button>
+      <button class="slider-btn slider-next" type="button" aria-label="Imagen siguiente">&#8250;</button>
+      <div class="slider-dots" role="tablist" aria-label="Seleccionar imagen"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-script">Café</span>
+      <span class="brand-name">VAL</span>
+      <p>Cafetería francesa en el corazón de la ciudad. Café, pâtisserie y buena conversación desde 1987.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Enlaces del pie">
+      <h3>Explorar</h3>
+      <ul>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="index.html#carta">La Carte</a></li>
+        <li><a href="index.html#galeria">Galería</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Pinterest</a></li>
+      </ul>
+    </div>
+    <div class="footer-hours">
+      <h3>Horario</h3>
+      <p>Mar — Dom<br>08:00 — 20:00</p>
+      <p class="footer-closed">Lunes cerrado</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Café Val · Hecho con mantequilla y cariño en Madrid.</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Volver arriba">↑</button>
+
+<div class="modal" id="reserva-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-overlay" data-close></div>
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Cerrar" data-close>&times;</button>
+    <p class="script-note">Merci beaucoup</p>
+    <h2 id="modal-title">¡Reserva recibida!</h2>
+    <p id="modal-text">Te esperamos pronto en Café Val.</p>
+    <button class="btn btn--solid" type="button" data-close>Cerrar</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js?v=3"></script>
+</body>
+</html>
