@@ -1,1 +1,374 @@
-comienzo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Val — Cafetería Francesa</title>
+<meta name="description" content="Café Val, cafetería francesa: café de especialidad, pâtisserie artesanal y brunch servido sin prisa en un rincón parisino.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="css/styles.css?v=3">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header" id="top">
+  <div class="topbar">
+    <p>Abierto de martes a domingo · 08:00 — 20:00 · Rue de Val, 12</p>
+  </div>
+
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="brand" href="#top" aria-label="Café Val, inicio">
+      <span class="brand-script">Café</span>
+      <span class="brand-name">VAL</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#carta">La Carte</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#ambiente">Ambiente</a></li>
+      <li><a href="#faq">Preguntas</a></li>
+      <li><a class="btn btn--ghost nav-reserve" href="reservas.html">Reservar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <section class="hero" aria-label="Presentación">
+    <div class="hero-media">
+      <img src="media/hero-interior.webp" alt="Interior de una cafetería francesa con luz cálida de la mañana">
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow" data-aos="fade-up">Cafetería francesa · desde 1987</p>
+      <h1 data-aos="fade-up" data-aos-delay="100">
+        Un rincón de París
+        <span class="hero-typed">para <span id="typed"></span></span>
+      </h1>
+      <p class="hero-text" data-aos="fade-up" data-aos-delay="200">Café de especialidad, pâtisserie recién horneada cada mañana y brunch servido sin prisa. Bienvenue chez Café Val.</p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+        <a class="btn btn--solid" href="#carta">Ver la carte</a>
+        <a class="btn btn--outline" href="reservas.html">Reservar mesa</a>
+      </div>
+    </div>
+    <span class="scroll-hint" aria-hidden="true">Desliza</span>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Croissants au beurre</span>
+      <span class="dot">✦</span>
+      <span>Café de spécialité</span>
+      <span class="dot">✦</span>
+      <span>Pâtisserie artesanal</span>
+      <span class="dot">✦</span>
+      <span>Brunch parisino</span>
+      <span class="dot">✦</span>
+      <span>Croissants au beurre</span>
+      <span class="dot">✦</span>
+      <span>Café de spécialité</span>
+      <span class="dot">✦</span>
+      <span>Pâtisserie artesanal</span>
+      <span class="dot">✦</span>
+      <span>Brunch parisino</span>
+      <span class="dot">✦</span>
+    </div>
+  </div>
+
+  <section class="section about" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <p class="eyebrow" data-aos="fade-up">Maison Val</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Tres generaciones<br>tostando el mismo café</h2>
+        <p data-aos="fade-up" data-aos-delay="160">Nacimos como una pequeña boulangerie de barrio y hoy seguimos igual: harina en las manos, mantequilla francesa y un molinillo que no ha parado de girar. Cada taza es un pequeño viaje a un café de Montmartre.</p>
+        <p data-aos="fade-up" data-aos-delay="200">Trabajamos con productores de comercio justo y horneamos dos veces al día para que nunca falte un croissant crujiente.</p>
+        <div class="stats" data-aos="fade-up" data-aos-delay="240">
+          <div class="stat">
+            <span class="stat-num" data-count="38">0</span>
+            <span class="stat-label">Años de historia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="14">0</span>
+            <span class="stat-label">Recetas de la casa</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Cafés de origen</span>
+          </div>
+        </div>
+      </div>
+      <figure class="about-media" data-aos="fade-left" data-aos-delay="120">
+        <img src="media/nosotros-barista.webp" alt="Barista sonriente tras la barra de mármol del Café Val">
+        <figcaption class="script-note">Fait avec amour</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section carte" id="carta">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-aos="fade-up">La Carte</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Nuestra carta</h2>
+        <p class="section-sub" data-aos="fade-up" data-aos-delay="140">Elige una categoría y descubre lo que sale hoy del horno.</p>
+      </header>
+
+      <div class="tabs" data-aos="fade-up" data-aos-delay="180">
+        <div class="tab-list" role="tablist" aria-label="Categorías de la carta">
+          <button class="tab is-active" role="tab" id="tab-cafes" aria-controls="panel-cafes" aria-selected="true" type="button">Cafés</button>
+          <button class="tab" role="tab" id="tab-patisseries" aria-controls="panel-patisseries" aria-selected="false" type="button">Pâtisseries</button>
+          <button class="tab" role="tab" id="tab-salades" aria-controls="panel-salades" aria-selected="false" type="button">Salés &amp; Brunch</button>
+        </div>
+
+        <div class="tab-panels">
+          <div class="tab-panel is-active" id="panel-cafes" role="tabpanel" aria-labelledby="tab-cafes">
+            <ul class="menu-list">
+              <li><span class="menu-name">Café au lait</span><span class="menu-dots"></span><span class="menu-price">2,80 €</span><p class="menu-desc">Espresso con leche texturizada y espuma cálida.</p></li>
+              <li><span class="menu-name">Espresso Parisien</span><span class="menu-dots"></span><span class="menu-price">1,90 €</span><p class="menu-desc">Blend de la casa, tueste medio, cuerpo redondo.</p></li>
+              <li><span class="menu-name">Chocolat chaud</span><span class="menu-dots"></span><span class="menu-price">3,60 €</span><p class="menu-desc">Chocolate al 70% con nata montada a mano.</p></li>
+              <li><span class="menu-name">Café filtre de origen</span><span class="menu-dots"></span><span class="menu-price">3,20 €</span><p class="menu-desc">Método V60, notas frutales y final limpio.</p></li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="panel-patisseries" role="tabpanel" aria-labelledby="tab-patisseries" hidden>
+            <ul class="menu-list">
+              <li><span class="menu-name">Croissant au beurre</span><span class="menu-dots"></span><span class="menu-price">2,20 €</span><p class="menu-desc">Laminado a mano con mantequilla francesa AOP.</p></li>
+              <li><span class="menu-name">Tarte au citron</span><span class="menu-dots"></span><span class="menu-price">4,10 €</span><p class="menu-desc">Merengue quemado y crema de limón de Menton.</p></li>
+              <li><span class="menu-name">Éclair au chocolat</span><span class="menu-dots"></span><span class="menu-price">3,40 €</span><p class="menu-desc">Pasta choux, crema pastelera y glaseado brillante.</p></li>
+              <li><span class="menu-name">Macaron surtido</span><span class="menu-dots"></span><span class="menu-price">1,60 €</span><p class="menu-desc">Pistacho, frambuesa, vainilla o cassis.</p></li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="panel-salades" role="tabpanel" aria-labelledby="tab-salades" hidden>
+            <ul class="menu-list">
+              <li><span class="menu-name">Croque monsieur</span><span class="menu-dots"></span><span class="menu-price">6,50 €</span><p class="menu-desc">Jamón, emmental gratinado y pan de molde brioché.</p></li>
+              <li><span class="menu-name">Quiche lorraine</span><span class="menu-dots"></span><span class="menu-price">6,90 €</span><p class="menu-desc">Bacon ahumado, huevo y crema, servida tibia.</p></li>
+              <li><span class="menu-name">Brunch Val</span><span class="menu-dots"></span><span class="menu-price">16,00 €</span><p class="menu-desc">Huevos benedictine, croissant, fruta y café.</p></li>
+              <li><span class="menu-name">Salade niçoise</span><span class="menu-dots"></span><span class="menu-price">9,20 €</span><p class="menu-desc">Atún, aceitunas, judía verde y huevo campero.</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-aos="fade-up">Galerie</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Momentos de la casa</h2>
+        <p class="section-sub" data-aos="fade-up" data-aos-delay="140">Desliza para pasear por nuestro día a día.</p>
+      </header>
+    </div>
+
+    <div class="slider" data-aos="fade-up" data-aos-delay="160">
+      <div class="slider-viewport">
+        <ul class="slider-track">
+          <li class="slide"><img src="media/galeria-espresso.webp" alt="Taza de espresso sobre mesa de mármol"><span class="slide-caption">El espresso de cada mañana</span></li>
+          <li class="slide"><img src="media/galeria-croissants.webp" alt="Cesta de croissants recién hechos"><span class="slide-caption">Recién salidos del horno</span></li>
+          <li class="slide"><img src="media/galeria-macarons.webp" alt="Vitrina de macarons y éclairs franceses"><span class="slide-caption">La pâtisserie del día</span></li>
+          <li class="slide"><img src="media/galeria-latte.webp" alt="Barista sirviendo latte art"><span class="slide-caption">Arte en la espuma</span></li>
+          <li class="slide"><img src="media/galeria-brunch.webp" alt="Mesa de brunch con tostadas, huevos y café"><span class="slide-caption">El brunch parisino</span></li>
+          <li class="slide"><img src="media/galeria-terraza.webp" alt="Terraza de cafetería francesa por la mañana"><span class="slide-caption">La terraza de la Rue de Val</span></li>
+        </ul>
+      </div>
+
+      <button class="slider-btn slider-prev" type="button" aria-label="Imagen anterior">&#8249;</button>
+      <button class="slider-btn slider-next" type="button" aria-label="Imagen siguiente">&#8250;</button>
+      <div class="slider-dots" role="tablist" aria-label="Seleccionar imagen"></div>
+    </div>
+  </section>
+
+  <section class="section ambiente" id="ambiente">
+    <div class="container ambiente-grid">
+      <div class="ambiente-media" data-aos="fade-right">
+        <img src="media/ambiente-interior.webp" alt="Detalle del interior con plantas y espejos vintage">
+      </div>
+      <div class="ambiente-copy">
+        <p class="eyebrow" data-aos="fade-up">L'ambiance</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Un lugar para quedarse</h2>
+        <ul class="features">
+          <li data-aos="fade-up" data-aos-delay="120">
+            <h3>Terraza al sol</h3>
+            <p>Seis mesas en la Rue de Val para desayunar al aire libre.</p>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="160">
+            <h3>Rincón de lectura</h3>
+            <p>Biblioteca libre de novelas francesas y prensa del día.</p>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="200">
+            <h3>Música en directe</h3>
+            <p>Jazz acústico los viernes y sábados a partir de las 19:00.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <div class="container faq-grid">
+      <header class="section-head section-head--left">
+        <p class="eyebrow" data-aos="fade-up">Questions</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Preguntas frecuentes</h2>
+        <p class="section-sub" data-aos="fade-up" data-aos-delay="140">¿Dudas antes de venir? Aquí resolvemos las más habituales.</p>
+      </header>
+
+      <div class="accordion" data-aos="fade-up" data-aos-delay="160">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-trigger" type="button" aria-expanded="false">¿Aceptáis reservas para grupos grandes?</button>
+          </h3>
+          <div class="accordion-panel"><p>Sí, para grupos de más de 8 personas recomendamos reservar con 48 horas de antelación. Escríbenos o llámanos y adaptamos el espacio.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-trigger" type="button" aria-expanded="false">¿Tenéis opciones sin gluten o veganas?</button>
+          </h3>
+          <div class="accordion-panel"><p>Contamos con varias opciones veganas y sin gluten marcadas en la carta. Avísanos al reservar y nuestro equipo te asesorará.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-trigger" type="button" aria-expanded="false">¿Se puede trabajar con portátil?</button>
+          </h3>
+          <div class="accordion-panel"><p>Por supuesto. Hay wifi gratis y enchufes en la zona del fondo, solo pedimos mantener un tono bajo durante las horas punta.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-trigger" type="button" aria-expanded="false">¿Admitís perros?</button>
+          </h3>
+          <div class="accordion-panel"><p>Los perros son bienvenidos en la terraza y en la zona de la entrada. Tenemos agua y algún premio para los más educados.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reservas" id="reservas">
+    <div class="container reservas-grid">
+      <div class="reservas-copy">
+        <p class="eyebrow" data-aos="fade-up">Réservation</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Reserva tu mesa</h2>
+        <p class="section-sub" data-aos="fade-up" data-aos-delay="140">Déjanos tus datos y te confirmaremos la reserva al instante.</p>
+        <ul class="contact-list" data-aos="fade-up" data-aos-delay="180">
+          <li><strong>Dirección</strong> Rue de Val, 12 · 28004 Madrid</li>
+          <li><strong>Teléfono</strong> +34 910 000 000</li>
+          <li><strong>Horario</strong> Mar — Dom · 08:00 a 20:00</li>
+        </ul>
+      </div>
+
+      <form class="reserva-form" id="reserva-form" novalidate data-aos="fade-left" data-aos-delay="160">
+        <div class="field">
+          <label for="nombre">Nombre y apellidos</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Camille Dupont" required>
+          <span class="field-error" data-error-for="nombre"></span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="hola@correo.com" required>
+            <span class="field-error" data-error-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+34 600 000 000" required>
+            <span class="field-error" data-error-for="telefono"></span>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <span class="field-error" data-error-for="fecha"></span>
+          </div>
+          <div class="field">
+            <label for="personas">Comensales</label>
+            <select id="personas" name="personas" required>
+              <option value="">Elige…</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6+">Más de 5</option>
+            </select>
+            <span class="field-error" data-error-for="personas"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Comentarios (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="3" placeholder="Alergias, celebración, terraza…"></textarea>
+        </div>
+
+        <button class="btn btn--solid btn--full" type="submit">Confirmar reserva</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-script">Café</span>
+      <span class="brand-name">VAL</span>
+      <p>Cafetería francesa en el corazón de la ciudad. Café, pâtisserie y buena conversación desde 1987.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Enlaces del pie">
+      <h3>Explorar</h3>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#carta">La Carte</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+      </ul>
+    </nav>
+    <div class="footer-social">
+      <h3>Síguenos</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Pinterest</a></li>
+      </ul>
+    </div>
+    <div class="footer-hours">
+      <h3>Horario</h3>
+      <p>Mar — Dom<br>08:00 — 20:00</p>
+      <p class="footer-closed">Lunes cerrado</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Café Val · Hecho con mantequilla y cariño en Madrid.</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Volver arriba">↑</button>
+
+<div class="modal" id="reserva-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-overlay" data-close></div>
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Cerrar" data-close>&times;</button>
+    <p class="script-note">Merci beaucoup</p>
+    <h2 id="modal-title">¡Reserva recibida!</h2>
+    <p id="modal-text">Te esperamos pronto en Café Val.</p>
+    <button class="btn btn--solid" type="button" data-close>Cerrar</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="js/main.js?v=3"></script>
+</body>
+</html>
